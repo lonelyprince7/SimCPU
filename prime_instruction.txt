@@ -1,0 +1,19 @@
+Ldi R1 03   
+Ldi R5 01
+Print 02
+Loop:
+Mov R4 R1 
+Sub R4 R5  
+Ldi R3 01 
+Ldi R2 02 
+Loop:
+Cmpa R1 R2
+Ldi R3 00
+Add R2 R5
+Ble R2 R4 Loop
+Cmpb R3
+Print R1
+Add R1 R5
+Ble R1 1000 Loop
+#
+

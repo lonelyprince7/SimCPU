@@ -1,0 +1,9 @@
+Ldi R1 00
+Ldi R2 01
+Loop:
+Mov R3 R1
+Mul R3 R3
+Print R3
+Add R1 R2
+Ble R1 99 Loop
+#
